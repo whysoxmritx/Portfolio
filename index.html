@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amrita Pandey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-circle"></div>
+
+  <!-- NAV -->
+  <header id="site-header">
+    <nav class="nav-inner">
+      <a href="#" class="logo">AP<span class="logo-dot">.</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="CV_amrita.pdf" download class="nav-resume">Resume ↗</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" class="mob-link">About</a>
+      <a href="#work" class="mob-link">Work</a>
+      <a href="#skills" class="mob-link">Skills</a>
+      <a href="#contact" class="mob-link">Contact</a>
+      <a href="CV_amrita.pdf" download class="mob-link">Resume ↗</a>
+    </div>
+  </header>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       HERO
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <section id="hero">
+    <div class="hero-left">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        Available for internships
+      </div>
+      <h1 class="hero-h1">
+        <span class="hero-line" data-delay="0">Hi, I'm</span>
+        <span class="hero-line italic" data-delay="120">Amrita</span>
+        <span class="hero-line" data-delay="240">Pandey<span class="period">.</span></span>
+      </h1>
+      <p class="hero-sub">
+        CS student at LPU building things with <em>Python</em>, <em>Java</em> &amp; the web.<br/>
+        I care about code that actually works for people.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn-main">See my work</a>
+        <a href="#contact" class="btn-ghost">Say hello →</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-img-wrap">
+        <img src="self.jpg" alt="Amrita Pandey" class="hero-photo"/>
+        <div class="hero-img-tag">
+          <span class="pulse-ring"></span>
+          B.Tech CSE · 2023–27
+        </div>
+      </div>
+      <div class="hero-floater floater-1">200+ DSA problems</div>
+      <div class="hero-floater floater-2">rPPG · ML · Java</div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       MARQUEE
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <div class="marquee-strip">
+    <div class="marquee-track" id="marqueeTrack"></div>
+  </div>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       ABOUT
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left fade-up">
+          <p class="section-eyebrow">About me</p>
+          <h2 class="section-h2">I build software<br/><span class="italic">that matters.</span></h2>
+          <div class="about-divider"></div>
+          <p class="body-text">
+            I'm a second-year CS student at <strong>Lovely Professional University</strong> — 
+            and I've been writing code long enough to know that the best programs are the ones 
+            people actually want to use.
+          </p>
+          <p class="body-text">
+            My work lives at the intersection of <strong>machine learning</strong>, 
+            <strong>full-stack web</strong>, and <strong>systems engineering</strong>. 
+            I've built a real-time heart rate estimator using computer vision, a deployed 
+            finance app with OAuth, and a desktop banking system in Java — all while grinding 
+            200+ DSA problems on the side.
+          </p>
+          <p class="body-text">
+            I'm a fast learner who takes hard problems seriously. If you're building something 
+            interesting, <a href="#contact" class="inline-link">let's talk</a>.
+          </p>
+        </div>
+
+        <div class="about-right fade-up" style="--delay:0.15s">
+          <div class="stat-stack">
+            <div class="big-stat">
+              <span class="big-num" data-target="200">0</span>
+              <span class="big-suffix">+</span>
+              <span class="big-label">DSA problems solved</span>
+            </div>
+            <div class="big-stat">
+              <span class="big-num" data-target="3">0</span>
+              <span class="big-suffix"></span>
+              <span class="big-label">shipped projects</span>
+            </div>
+            <div class="big-stat">
+              <span class="big-num" data-target="3">0</span>
+              <span class="big-suffix">+</span>
+              <span class="big-label">certifications</span>
+            </div>
+          </div>
+
+          <div class="edu-card fade-up" style="--delay:0.25s">
+            <div class="edu-card-header">
+              <span class="edu-card-header-title">Education</span>
+            </div>
+            <div class="edu-timeline">
+
+  <div class="edu-item">
+    <div class="edu-node">UG</div>
+    <div class="edu-content">
+      <div class="edu-degree">B.Tech CSE — AI / ML</div>
+      <div class="edu-school">Lovely Professional University</div>
+      <div class="edu-loc">Phagwara, Punjab</div>
+      <div class="edu-year">2023–27</div>
+    </div>
+  </div>
+
+  <div class="edu-item">
+    <div class="edu-node">XII</div>
+    <div class="edu-content">
+      <div class="edu-degree">Class XII</div>
+      <div class="edu-school">St. Mary's Convent School</div>
+      <div class="edu-loc">Prayagraj, UP</div>
+      <div class="edu-year">2022–23</div>
+    </div>
+  </div>
+
+  <div class="edu-item">
+    <div class="edu-node">X</div>
+    <div class="edu-content">
+      <div class="edu-degree">Class X</div>
+      <div class="edu-school">St. Mary's Convent School</div>
+      <div class="edu-loc">Prayagraj, UP</div>
+      <div class="edu-year">2020–21</div>
+    </div>
+  </div>
+
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       WORK / PROJECTS
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <section id="work">
+    <div class="container">
+      <div class="section-head fade-up">
+        <p class="section-eyebrow">Selected work</p>
+        <h2 class="section-h2">Projects I'm <span class="italic">proud of.</span></h2>
+      </div>
+
+      <div class="projects-list">
+
+        <!-- Project 1 -->
+        <article class="project-row fade-up" data-index="01">
+          <div class="project-row-left">
+            <div class="project-num">01</div>
+            <div class="project-row-body">
+              <div class="project-row-tags">
+                <span class="chip chip-green">JavaScript</span>
+                <span class="chip chip-blue">Google OAuth</span>
+                <span class="chip">Netlify</span>
+              </div>
+              <h3 class="project-row-title">Nova — Personal Finance Tracker</h3>
+              <p class="project-row-desc">
+                A full-stack finance dashboard — real-time expense tracking, budget management,
+                spending analytics with chart visualisations. Integrated Google OAuth, dark mode,
+                and CSV export. Live on Netlify.
+              </p>
+              <div class="project-row-links">
+                <a href="#" class="text-link">Live demo ↗</a>
+                <a href="#" class="text-link">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-row-right">
+            <div class="project-visual pv-finance">
+              <div class="pv-bar-group">
+                <div class="pv-bar" style="--h:65%"></div>
+                <div class="pv-bar" style="--h:80%"></div>
+                <div class="pv-bar" style="--h:45%"></div>
+                <div class="pv-bar" style="--h:90%"></div>
+                <div class="pv-bar" style="--h:55%"></div>
+                <div class="pv-bar" style="--h:70%"></div>
+              </div>
+              <div class="pv-label">₹ Budget tracker</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-row fade-up" data-index="02">
+          <div class="project-row-left">
+            <div class="project-num">02</div>
+            <div class="project-row-body">
+              <div class="project-row-tags">
+                <span class="chip chip-red">Python</span>
+                <span class="chip chip-green">OpenCV</span>
+                <span class="chip chip-blue">Scikit-Learn</span>
+              </div>
+              <h3 class="project-row-title">Real-Time Heart Rate Estimation</h3>
+              <p class="project-row-desc">
+                An rPPG pipeline using YCrCb skin masking + FFT-based signal extraction.
+                A weighted voting ensemble (Random Forest, GBM, Extra Trees) achieves
+                ~90% accuracy with MAE &lt; 5 BPM — no sensors needed, just a webcam.
+              </p>
+              <div class="project-row-links">
+                <a href="#" class="text-link">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-row-right">
+            <div class="project-visual pv-heartrate">
+              <svg viewBox="0 0 200 80" class="pv-ecg">
+                <polyline points="0,40 30,40 45,10 55,70 65,40 90,40 105,20 115,60 125,40 200,40"
+                  fill="none" stroke="var(--red)" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+              <div class="pv-label">~90% accuracy</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-row fade-up" data-index="03">
+          <div class="project-row-left">
+            <div class="project-num">03</div>
+            <div class="project-row-body">
+              <div class="project-row-tags">
+                <span class="chip chip-green">Java</span>
+                <span class="chip chip-blue">AWT/Swing</span>
+                <span class="chip">OOP</span>
+              </div>
+              <h3 class="project-row-title">Bank Management System</h3>
+              <p class="project-row-desc">
+                A full desktop banking application — modular event-driven architecture,
+                multi-panel dashboard with balance, FDs, CIBIL scores, transfers,
+                payments, and calculators. Built during structured training at LPU.
+              </p>
+              <div class="project-row-links">
+                <a href="#" class="text-link">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-row-right">
+            <div class="project-visual pv-bank">
+              <div class="pv-window">
+                <div class="pv-window-bar"><span></span><span></span><span></span></div>
+                <div class="pv-window-body">
+                  <div class="pv-row-item"></div>
+                  <div class="pv-row-item short"></div>
+                  <div class="pv-row-item medium"></div>
+                </div>
+              </div>
+              <div class="pv-label">Java Desktop App</div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       SKILLS
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-head fade-up">
+        <p class="section-eyebrow">Toolkit</p>
+        <h2 class="section-h2">What I work <span class="italic">with.</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category fade-up" style="--delay:0s">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🧠</span>
+            <h4>AI / ML</h4>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Scikit-Learn</span>
+            <span class="skill-pill">OpenCV</span>
+            <span class="skill-pill">NumPy</span>
+            <span class="skill-pill">Pandas</span>
+            <span class="skill-pill">SciPy</span>
+            <span class="skill-pill">FFT / rPPG</span>
+          </div>
+        </div>
+
+        <div class="skill-category fade-up" style="--delay:0.08s">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">⚙️</span>
+            <h4>Engineering</h4>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">C++</span>
+            <span class="skill-pill">OOP</span>
+            <span class="skill-pill">DSA</span>
+            <span class="skill-pill">MySQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category fade-up" style="--delay:0.16s">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🌐</span>
+            <h4>Web</h4>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">HTML / CSS</span>
+            <span class="skill-pill">Google OAuth</span>
+          </div>
+        </div>
+
+        <div class="skill-category fade-up" style="--delay:0.24s">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🛠</span>
+            <h4>Tools</h4>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">Git / GitHub</span>
+            <span class="skill-pill">Linux</span>
+            <span class="skill-pill">VS Code</span>
+            <span class="skill-pill">IntelliJ</span>
+            <span class="skill-pill">Netlify</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievements strip -->
+      <div class="achiev-strip fade-up">
+        <div class="achiev-item">
+          <div class="achiev-ico">💡</div>
+          <div class="achiev-text">
+            <strong>200+ Problems</strong>
+            <span>LeetCode · HackerRank</span>
+          </div>
+        </div>
+        <div class="achiev-item">
+          <div class="achiev-ico">🤖</div>
+          <div class="achiev-text">
+            <strong>Agentic AI Day</strong>
+            <span>Google · Sep 2025</span>
+          </div>
+        </div>
+        <div class="achiev-item">
+          <div class="achiev-ico">📜</div>
+          <div class="achiev-text">
+            <strong>DS using C++</strong>
+            <span>Certified</span>
+          </div>
+        </div>
+        <div class="achiev-item">
+          <div class="achiev-ico">🌐</div>
+          <div class="achiev-text">
+            <strong>Full Stack</strong>
+            <span>Microlearning Cert</span>
+          </div>
+        </div>
+        <div class="achiev-item">
+          <div class="achiev-ico">🔐</div>
+          <div class="achiev-text">
+            <strong>Deloitte Cyber</strong>
+            <span>Job Simulation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       CONTACT
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-wrap fade-up">
+        <div class="contact-left">
+          <p class="section-eyebrow">Get in touch</p>
+          <h2 class="section-h2">Let's build<br/><span class="italic">something.</span></h2>
+          <p class="body-text">
+            I'm open to internships, collaborations, and interesting conversations.
+            Drop me a message — I reply to everything.
+          </p>
+          <div class="contact-detail-list">
+            <a href="mailto:amrita16411@gmail.com" class="contact-detail">
+              <div class="cd-icon">✉</div>
+              <div>
+                <div class="cd-label">Email</div>
+                <div class="cd-value">amrita16411@gmail.com</div>
+              </div>
+            </a>
+            <a href="tel:+918468016411" class="contact-detail">
+              <div class="cd-icon">📱</div>
+              <div>
+                <div class="cd-label">Phone</div>
+                <div class="cd-value">+91 84680 16411</div>
+              </div>
+            </a>
+            <a href="#" class="contact-detail">
+              <div class="cd-icon">in</div>
+              <div>
+                <div class="cd-label">LinkedIn</div>
+                <div class="cd-value">Amrita Pandey</div>
+              </div>
+            </a>
+            <a href="#" class="contact-detail">
+              <div class="cd-icon">&lt;/&gt;</div>
+              <div>
+                <div class="cd-label">GitHub</div>
+                <div class="cd-value">Amrita Pandey</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" name="contact" method="POST" data-netlify="true" id="contactForm">
+          <input type="hidden" name="form-name" value="contact"/>
+          <div class="field-row">
+            <div class="field">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your name" required/>
+            </div>
+            <div class="field">
+              <label for="femail">Email</label>
+              <input type="email" id="femail" name="email" placeholder="your@email.com" required/>
+            </div>
+          </div>
+          <div class="field">
+            <label for="fsubject">Subject</label>
+            <input type="text" id="fsubject" name="subject" placeholder="Internship / Collab / Just saying hi"/>
+          </div>
+          <div class="field">
+            <label for="fmsg">Message</label>
+            <textarea id="fmsg" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn-main form-submit-btn">Send it →</button>
+          <div class="form-success" id="formSuccess">Thanks! I'll get back to you soon 🙌</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Amrita Pandey</div>
+      <div class="footer-copy">© 2026 · B.Tech CSE · LPU</div>
+      <div class="footer-links">
+        <a href="mailto:amrita16411@gmail.com">Email</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
