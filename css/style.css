@@ -583,7 +583,16 @@ section { padding: 7rem 0; }
   border-color: var(--accent); transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(212,114,74,0.12);
 }
-.stack-icon-card img { width: 36px; height: 36px; object-fit: contain; }
+.stack-icon-card img {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  min-height: 36px;
+  max-width: 36px;
+  max-height: 36px;
+  object-fit: contain;
+  display: block;
+}
 .stack-icon-letter {
   width: 36px; height: 36px; border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
