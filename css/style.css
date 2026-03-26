@@ -575,12 +575,7 @@ section { padding: 7rem 0; }
   display: flex; flex-direction: column; align-items: center;
   gap: 0.5rem; padding: 1rem 1rem 0.85rem;
   background: var(--surface); border: 1px solid var(--rule);
-  border-radius: var(--radius);
-  width: 90px;
-  min-width: 90px;
-  max-width: 90px;
-  overflow: hidden;
-  flex-shrink: 0;
+  border-radius: var(--radius); width: 90px;
   transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
   cursor: default;
 }
@@ -588,16 +583,7 @@ section { padding: 7rem 0; }
   border-color: var(--accent); transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(212,114,74,0.12);
 }
-.stack-icon-card img {
-  width: 36px;
-  height: 36px;
-  min-width: 36px;
-  min-height: 36px;
-  max-width: 36px;
-  max-height: 36px;
-  object-fit: contain;
-  display: block;
-}
+.stack-icon-card img { width: 36px; height: 36px; object-fit: contain; }
 .stack-icon-letter {
   width: 36px; height: 36px; border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
